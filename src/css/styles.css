@@ -14,7 +14,8 @@ body {
 }
 
 .back-home {
-  padding: 20px 0;
+  display: flex;
+  padding: 10px 0;
   width: 100px;
 }
 
@@ -46,13 +47,12 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 408px;
   height: 296px;
 }
 
 label {
-
   margin-bottom: 8px;
   font-weight: 400;
   font-size: 16px;
@@ -79,7 +79,6 @@ button {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
-
 
   width: 95px;
   height: 40px;
