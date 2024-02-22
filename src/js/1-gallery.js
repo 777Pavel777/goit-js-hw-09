@@ -1,4 +1,3 @@
-
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
@@ -72,9 +71,8 @@ const images = [
 
 const refs = document.querySelector('.gallery');
 
-const markup = images
-  .map(({ preview, original, description }) => {
-    return `<li class="gallery-item">
+images.map(({ preview, original, description }) => {
+  const markup = `<li class="gallery-item">
         <a class="gallery-link" href="${original}">
       <img
         class="gallery-image"
@@ -82,9 +80,11 @@ const markup = images
         alt="${description}"
       />
     </li>`;
-  })
-  .join('');
 
-refs.innerHTML = markup;
+  refs.insertAdjacentHTML('beforeend', markup);
+});
 
-const lightbox = new SimpleLightbox('.gallery a', {});
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
