@@ -44,19 +44,18 @@ body {
 
 .feedback-form {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  background: aqua;
+  border-radius: 10px;
   margin: 0 auto;
   width: 408px;
   height: 296px;
 }
 
 label {
+
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
@@ -74,4 +73,23 @@ textarea {
   width: 360px;
   height: 80px;
   resize: none;
+}
+
+button {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+
+
+  width: 95px;
+  height: 40px;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  background-color: #4e75ff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #6c8cff;
 }
