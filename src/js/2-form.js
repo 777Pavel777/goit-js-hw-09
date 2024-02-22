@@ -7,7 +7,6 @@ const userMessage = formElements.elements.message;
 formElements.addEventListener('input', onInput);
 
 function onInput(evt) {
-  evt.preventDefault();
   const userInfo = {
     email: userEmail.value.trim(),
     message: userMessage.value.trim(),
@@ -35,7 +34,7 @@ function onClickBtn(evt) {
   const message = userMessage.value.trim();
 
   if (email === '' || message === '') {
-    return;
+    return alert('Будь ласка, заповніть всі поля.');
   }
   console.log(JSON.parse(localStorage.getItem(localStorageKey)));
   localStorage.removeItem(localStorageKey);
