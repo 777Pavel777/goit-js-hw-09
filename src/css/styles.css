@@ -70,6 +70,9 @@ input {
 }
 
 textarea {
+  font-style: italic;
+  padding-left: 10px;
+  font-size: 14px;
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
